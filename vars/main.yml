@@ -1,0 +1,6 @@
+resolv__options:
+  - "{% if resolv_debug %}debug{% endif %}"
+  - "{% if resolv_ndots is not none %}ndots:{{ resolv_ndots }}{% endif %}"
+  - "{% if resolv_timeout is not none %}timeout:{{ resolv_timeout }}{% endif %}"
+  - "{% if resolv_attempts is not none %}attempts:{{ resolv_attempts }}{% endif %}"
+  - "{% if resolv_rotate %}rotate{% endif %}"

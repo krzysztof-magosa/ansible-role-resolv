@@ -1,0 +1,14 @@
+{{ ansible_managed | comment }}
+
+{% if resolv_search_domains %}
+search {{ resolv_search_domains | join(' ') }}
+{% endif %}
+{% if resolv_nameservers %}
+{% for entry in resolv_nameservers %}
+nameserver {{ entry }}
+{% endfor %}
+{% endif %}
+{% set options_filtered = (resolv__options + resolv_custom_options) | select() | list %}
+{% if options_filtered %}
+options {{ options_filtered | join(' ') }}
+{% endif %}

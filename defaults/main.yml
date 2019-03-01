@@ -1,0 +1,24 @@
+# Nameservers to use
+resolv_nameservers: []
+
+# Domain names to be searched
+resolv_search_domains: []
+
+# Whether to enable debug option
+resolv_debug: false
+
+# Threshold for number of dots for initial absolute query
+resolv_ndots: null
+
+# Timeout for waiting for answer from nameserver
+resolv_timeout: null
+
+# Number of times resolver will send query to nameserver before failing
+resolv_attempts: null
+
+# Enables round robin selection of nameservers
+resolv_rotate: false
+
+# List of custom options not supported above
+resolv_custom_options: []
+
