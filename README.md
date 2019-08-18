@@ -3,15 +3,15 @@
 [![Build Status](https://travis-ci.org/krzysztof-magosa/ansible-role-resolv.svg?branch=master)](https://travis-ci.org/krzysztof-magosa/ansible-role-resolv)
 
 ## Description
-Configures resolv.conf
+Ansible role configuring resolv.conf
 
 ## Requirements
-* Ansible 2.5
+* Ansible 2.5 or better
 
 ## Supported systems
 * CentOS (tested on 7)
-* Debian (tested on Stretch)
-* Ubuntu (tested on Xenial)
+* Debian (tested on Buster, Stretch)
+* Ubuntu (tested on Bionic)
 
 ## Variables
 See [defaults](defaults/main.yml).
