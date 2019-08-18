@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: "resolv"
   author: "Krzysztof Magosa"
   description: "Configures resolv.conf"
   license: "MIT"
