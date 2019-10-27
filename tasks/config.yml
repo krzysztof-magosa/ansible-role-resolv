@@ -1,7 +1,7 @@
 - name: Template resolv.conf
   template:
     src: "resolv.conf.j2"
-    dest: "/etc/resolv.conf"
+    dest: "/etc/resolv.conf{% if (ansible_facts.virtualization_type | default('')) == 'docker' %}.docker{% endif %}"
     owner: "root"
     group: "root"
     mode: "0644"

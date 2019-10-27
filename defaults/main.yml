@@ -21,4 +21,3 @@ resolv_rotate: false
 
 # List of custom options not supported above
 resolv_custom_options: []
-
